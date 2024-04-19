@@ -1,3 +1,103 @@
+:root{
+    --color1: rgb(3, 28, 3);
+    --color2: aliceblue;
+    --color3: rgb(44, 249, 44);
+    --color4: black;
+    --color5: rgba(204, 197, 197, 0.959);
+    --color6: rgba(231, 6, 251, 0.958);
+    --color5-opacity-50: rgba(8, 140, 140, 0.5);
+
+}
+
 body{
     font-family: "Montserrat", sans-serif;
+}
+
+.card{
+    box-shadow: 0 5px 20px -7px var(--color4);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card .btn{
+    position:absolute;
+    top: 20px;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: var(--color1);
+    color: var(--color5)
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card .btn-share{
+    left: 20px;
+    color: var(--color5);
+}
+.card .btn-favorite{
+    right: 20px;
+    background-color: aliceblue;
+    color: var(--color4);
+}
+.btn-share:hover{
+    box-shadow: 0 0 20px var(--color3);
+}
+
+.card .card-body{
+    padding: 15px;
+}
+
+.card h3{
+    font-size: 2rem;
+    margin: 0;
+    color: var(--color1);
+}
+ .card p{
+    color: var(--color1);
+ }
+
+ .card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    color: var(--color6)
+ }
+
+ .card .card-footer a{
+    text-decoration: none;
+    color: var(--color1);
+    display: block;
+    background-color: var(--color5);
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card .card-footer a:hover{
+    box-shadow: 0 0 15px var(--color5-opacity-50);
 }
